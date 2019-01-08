@@ -1,4 +1,3 @@
-module.exports = function InvalidMonthsAbbrError(message) {
-  this.message = message;
-  this.name = 'InvalidMonthsAbbrError';
-};
+class InvalidMonthsAbbrError extends Error {}
+
+export { InvalidMonthsAbbrError };

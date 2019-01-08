@@ -1,14 +1,14 @@
 'use strict';
 
-var InvalidMonthError = require('./src/errors/InvalidMonthError');
-var InvalidMonthsError = require('./src/errors/InvalidMonthsError');
-var InvalidMonthsAbbrError = require('./src/errors/InvalidMonthsAbbrError');
+const InvalidMonthError = import('./src/errors/InvalidMonthError');
+const InvalidMonthsError = import('./src/errors/InvalidMonthsError');
+const InvalidMonthsAbbrError = import('./src/errors/InvalidMonthsAbbrError');
 
-var InvalidWeekdayError = require('./src/errors/InvalidWeekdayError');
-var InvalidWeekdaysError = require('./src/errors/InvalidWeekdaysError');
-var InvalidWeekdaysAbbrError = require('./src/errors/InvalidWeekdaysAbbrError');
+const InvalidWeekdayError = import('./src/errors/InvalidWeekdayError');
+const InvalidWeekdaysError = import('./src/errors/InvalidWeekdaysError');
+const InvalidWeekdaysAbbrError = import('./src/errors/InvalidWeekdaysAbbrError');
 
-var MONTHS = [
+const MONTHS = [
   'January',
   'February',
   'March',
@@ -23,7 +23,7 @@ var MONTHS = [
   'December',
 ];
 
-var WEEKDAYS = [
+const WEEKDAYS = [
   'Sunday',
   'Monday',
   'Tuesday',
@@ -263,4 +263,4 @@ function calendar(config) {
   };
 }
 
-module.exports = calendar;
+export { calendar };

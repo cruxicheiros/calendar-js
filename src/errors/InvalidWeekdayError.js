@@ -1,4 +1,3 @@
-module.exports = function InvalidMonthError(message) {
-  this.message = message;
-  this.name = 'InvalidWeekdayError';
-};
+class InvalidWeekdayError extends Error {}
+
+export { InvalidWeekdayError };
